@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Witaj";
+}
+
+<h1>Witaj!</h1>
+
+<p>Jesteś zalogowany.</p>
+
+<form asp-action="Wyloguj" method="post">
+    <div class="form-group">
+        <input type="submit" value="Wyloguj" class="btn btn-primary" />
+    </div>
+</form>

@@ -1,0 +1,41 @@
+@model List<LoginApp.Models.Players>
+
+<h2>Players</h2>
+
+<form asp-action="Players" method="get">
+    <label for="team">Filter by team:</label>
+    <select id="team" name="team">
+        <option value="">All</option>
+        @foreach (var team in ViewBag.Teams)
+        {
+            <option value="@team" selected="@(team == ViewBag.CurrentTeam)">@team</option>
+        }
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Players" asp-route-sort="name">Name ▲</a>
+                <a asp-action="Players" asp-route-sort="name_desc">▼</a>
+            </th>
+            <th>
+                <a asp-action="Players" asp-route-sort="goals">Goals ▲</a>
+                <a asp-action="Players" asp-route-sort="goals_desc">▼</a>
+            </th>
+            <th>Team</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var player in Model)
+        {
+            <tr>
+                <td>@player.Name</td>
+                <td>@player.Goals</td>
+                <td>@player.Team</td>
+            </tr>
+        }
+    </tbody>
+</table>

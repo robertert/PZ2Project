@@ -1,0 +1,45 @@
+@model List<LoginApp.Models.Teams>
+
+<h2>Teams</h2>
+
+<form asp-action="Teams" method="get">
+    <label for="country">Filter by country:</label>
+    <select id="country" name="country">
+        <option value="">All</option>
+        @foreach (var country in ViewBag.Countries)
+        {
+            <option value="@country" selected="@(country == ViewBag.CurrentCountry)">@country</option>
+        }
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Teams" asp-route-sort="name">Name ▲</a>
+                <a asp-action="Teams" asp-route-sort="name_desc">▼</a>
+            </th>
+            <th>Description</th>
+            <th>Captain</th>
+            <th>Country</th>
+            <th>
+                <a asp-action="Teams" asp-route-sort="points">Points ▲</a>
+                <a asp-action="Teams" asp-route-sort="points_desc">▼</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var team in Model)
+        {
+            <tr>
+                <td>@team.Name</td>
+                <td>@team.Description</td>
+                <td>@team.Captain</td>
+                <td>@team.Country</td>
+                <td>@team.Points</td>
+            </tr>
+        }
+    </tbody>
+</table>

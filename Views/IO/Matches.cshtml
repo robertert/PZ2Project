@@ -1,0 +1,44 @@
+@model List<LoginApp.Models.Match>
+
+<h2>Matches</h2>
+
+<form asp-action="Matches" method="get">
+    <label for="team">Filter by team:</label>
+    <select id="team" name="team">
+        <option value="">All</option>
+        @foreach (var team in ViewBag.Teams)
+        {
+            <option value="@team" selected="@(team == ViewBag.CurrentTeam)">@team</option>
+        }
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Matches" asp-route-sort="date">Date ▲</a>
+                <a asp-action="Matches" asp-route-sort="date_desc">▼</a>
+            </th>
+            <th>Name</th>
+            <th>Team1</th>
+            <th>Team2</th>
+            <th>Score1</th>
+            <th>Score2</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var match in Model)
+        {
+            <tr>
+                <td>@match.Date</td>
+                <td>@match.Name</td>
+                <td>@match.Team1</td>
+                <td>@match.Team2</td>
+                <td>@match.Score1</td>
+                <td>@match.Score2</td>
+            </tr>
+        }
+    </tbody>
+</table>

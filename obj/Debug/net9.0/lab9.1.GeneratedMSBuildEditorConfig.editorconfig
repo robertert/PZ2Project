@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = lab9._1
+build_property.RootNamespace = lab9._1
+build_property.ProjectDir = /Users/robertjacak/Documents/PZ2/lab9.1/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/robertjacak/Documents/PZ2/lab9.1
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vQ2hhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Coaches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vQ29hY2hlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Gallery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vR2FsbGVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Logowanie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vTG9nb3dhbmllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Matches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vTWF0Y2hlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Players.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vUGxheWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Teams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vVGVhbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/IO/Witaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSU8vV2l0YWouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/robertjacak/Documents/PZ2/lab9.1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3tx4ftg88s
