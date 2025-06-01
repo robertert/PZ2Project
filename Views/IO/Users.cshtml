@@ -1,0 +1,21 @@
+@model List<LoginApp.Models.Login>
+
+<h2>Lista użytkowników</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Login</th>
+            <th>Rola</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Username</td>
+            <td>@user.Role</td>
+        </tr>
+    }
+    </tbody>
+</table>

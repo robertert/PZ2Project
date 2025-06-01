@@ -26,27 +26,40 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="IO" asp-action="Witaj">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="IO"
-                                    asp-action="Players">Players</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="IO" asp-action="Players">Players</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="IO"
-                                    asp-action="Matches">Matches</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="IO" asp-action="Matches">Matches</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="IO" asp-action="Teams">Teams</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="IO"
-                                    asp-action="Coaches">Coaches</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="IO" asp-action="Coaches">Coaches</a>
                             </li>
+
+                            @* Pokazuj link tylko jeśli zalogowany użytkownik ma rolę Admin *@
+                            @if (Context.Session.GetString("Role") == "Admin")
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="IO" asp-action="Users">Users</a>
+                                </li>
+                            }
+
                             <li class="nav-item">
                                 <form asp-controller="IO" asp-action="Wyloguj" method="post">
                                     <button type="submit" class="nav-link btn btn-link text-dark">Wyloguj</button>
                                 </form>
                             </li>
                         }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="IO" asp-action="Register">Rejestracja</a>
+                            </li>
+                        }
                     </ul>
+
                 </div>
             </div>
         </nav>
