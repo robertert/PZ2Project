@@ -2513,19 +2513,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kapig\\.nuget\\packages\\": {}
+    "/Users/robertjacak/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kapig\\PZ2Project\\lab9.1.csproj",
+      "projectUniqueName": "/Users/robertjacak/Documents/PZ2/lab9.1/lab9.1.csproj",
       "projectName": "lab9.1",
-      "projectPath": "C:\\Users\\kapig\\PZ2Project\\lab9.1.csproj",
-      "packagesPath": "C:\\Users\\kapig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kapig\\PZ2Project\\obj\\",
+      "projectPath": "/Users/robertjacak/Documents/PZ2/lab9.1/lab9.1.csproj",
+      "packagesPath": "/Users/robertjacak/.nuget/packages/",
+      "outputPath": "/Users/robertjacak/Documents/PZ2/lab9.1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kapig\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/robertjacak/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -2595,7 +2595,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

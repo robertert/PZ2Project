@@ -45,7 +45,9 @@ namespace LoginApp.Data
             modelBuilder.Entity<Teams>().HasData(
                 new Teams { Id = 1, Name = "FC Barcelona", Description = "Hiszpański klub piłkarski", Captain = "Robert Lewandowski", Country = "Hiszpania", Points = 75 },
                 new Teams { Id = 2, Name = "Real Madrid", Description = "Hiszpański klub piłkarski", Captain = "Karim Benzema", Country = "Hiszpania", Points = 70 },
-                new Teams { Id = 3, Name = "Paris Saint-Germain", Description = "Francuski klub piłkarski", Captain = "Kylian Mbappé", Country = "Francja", Points = 80 }
+                new Teams { Id = 3, Name = "Paris Saint-Germain", Description = "Francuski klub piłkarski", Captain = "Kylian Mbappé", Country = "Francja", Points = 80 },
+                new Teams { Id = 5, Name = "Al Nassr", Description = "Saudyjski klub piłkarski", Captain = "Cristiano Ronaldo", Country = "Arabia Saudyjska", Points = 65 },
+                new Teams { Id = 6, Name = "Al Hilal", Description = "Saudyjski klub piłkarski", Captain = "Salem Al-Dawsari", Country = "Arabia Saudyjska", Points = 70 }
             );
             modelBuilder.Entity<Coach>().HasData(
                 new Coach { Id = 1, Name = "Xavi Hernandez", Description = "Trener FC Barcelona", TeamId = 1 },
@@ -56,7 +58,7 @@ namespace LoginApp.Data
 
 
             modelBuilder.Entity<Login>().HasData(
-                new Login { Id = 1, Username = "robert", PasswordHash = BCrypt.Net.BCrypt.HashPassword("test"), Role="Admin" },
+                new Login { Id = 1, Username = "robert", PasswordHash = BCrypt.Net.BCrypt.HashPassword("test"), Role = "Admin" },
                 new Login { Id = 2, Username = "user", PasswordHash = BCrypt.Net.BCrypt.HashPassword("userpass") },
                 new Login { Id = 3, Username = "deweloper", PasswordHash = BCrypt.Net.BCrypt.HashPassword("haslo123") },
                 new Login { Id = 4, Username = "deweloper2", PasswordHash = BCrypt.Net.BCrypt.HashPassword("haslo12345") }
