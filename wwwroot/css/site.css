@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+.table-spaced td, .table-spaced th {
+    padding: 12px 24px; /* top/bottom: 12px, left/right: 24px */
+    vertical-align: middle;
+}
