@@ -23,6 +23,7 @@
             </th>
             <th>Description</th>
             <th>Team</th>
+            <th>Team Country</th>
         </tr>
     </thead>
     <tbody>
@@ -31,7 +32,8 @@
             <tr>
                 <td>@coach.Name</td>
                 <td>@coach.Description</td>
-                <td>@coach.Team</td>
+                <td>@coach.Team?.Name</td>
+                <td>@coach.Team?.Country</td>
             </tr>
         }
     </tbody>

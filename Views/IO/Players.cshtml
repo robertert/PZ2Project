@@ -26,6 +26,7 @@
                 <a asp-action="Players" asp-route-sort="goals_desc">▼</a>
             </th>
             <th>Team</th>
+            <th>Team Capitan</th>
         </tr>
     </thead>
     <tbody>
@@ -34,7 +35,9 @@
             <tr>
                 <td>@player.Name</td>
                 <td>@player.Goals</td>
-                <td>@player.Team</td>
+                <td>@player.Team?.Name</td>
+                <td>@player.Team?.Captain</td>
+
             </tr>
         }
     </tbody>
